@@ -34,8 +34,8 @@ $products = $productManage->getAll();
             <td><?php echo $product->getName() ?></td>
             <td><?php echo $product->getPrice() ?></td>
             <td><?php echo $product->getQuantity() ?></td>
-            <td><a href="">Edit</a></td>
-            <td><a href="">Delete</a></td>
+            <td><a href="update.php?id=<?php echo $key ?>">Edit</a></td>
+            <td><a href="delete.php?id=<?php echo $key ?>">Delete</a></td>
         </tr>
         <?php endforeach; ?>
     </table>
