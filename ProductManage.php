@@ -34,7 +34,7 @@ class ProductManage
         return $this->productList;
     }
 
-    public function addStudent($product)
+    public function addProduct($product)
     {
         $this->productList = $this->readFile();
         $arr = [
@@ -45,6 +45,11 @@ class ProductManage
         ];
         array_push($this->productList, $arr);
         $this->saveFile($this->productList);
+
+    }
+
+    public function getProductById($id)
+    {
 
     }
 }

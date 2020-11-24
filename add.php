@@ -17,6 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     $product = new Product($id,$name,$price,$quantity);
     $productManage = new ProductManage();
-    $productManage->addStudent($product);
+    $productManage->addProduct($product);
     header('location:index.php');
 }
